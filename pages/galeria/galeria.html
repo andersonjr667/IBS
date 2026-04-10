@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Igreja Batista Solidária | IBS</title>
+    <meta name="description" content="Galeria de fotos dos cultos, eventos e atividades da Igreja Batista Solidária">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header dinâmico -->
+    <header id="header"></header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="hero-content">
+                <h1>Galeria de Fotos</h1>
+                <p class="hero-subtitle">Momentos especiais da IBS</p>
+                <p class="hero-text">Momentos de fé, amor e comunhão capturados em imagens</p>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <!-- Galeria -->
+        <section class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Momentos Especiais</h2>
+                    <p>Explore nossa galeria e veja os momentos marcantes da vida da nossa igreja</p>
+                </div>
+
+                <!-- Filtros de Categoria -->
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">Todas</button>
+                    <button class="filter-btn" data-filter="cultos">Cultos</button>
+                    <button class="filter-btn" data-filter="social">Centro Social</button>
+                    <button class="filter-btn" data-filter="eventos">Eventos</button>
+                </div>
+
+                <!-- Grid da Galeria -->
+                <div class="gallery-grid">
+                    <!-- Item 1: Culto -->
+                    <div class="gallery-item" data-category="cultos">
+                        <div class="gallery-image">
+                            <img src="/images/gallery/culto-1.jpg" alt="Culto de Celebração" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjI0IiBmb250LWZhbWlseT0iQXJpYWwiPkN1bHRvIGRlIENlbGVicmHDp8OjPC90ZXh0Pgo8L3N2Zz4='">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Culto de Celebração</h3>
+                                    <p>Domingo - 10:00h</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Centro Social -->
+                    <div class="gallery-item" data-category="social">
+                        <div class="gallery-image">
+                            <img src="/images/gallery/social-1.jpg" alt="Centro Social - Atendendo crianças" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjI0IiBmb250LWZhbWlseT0iQXJpYWwiPkNlbnRybyBTb2NpYWw8L3RleHQ+Cjwvc3ZnPg=='">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Centro Social</h3>
+                                    <p>Atendendo crianças</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Louvor -->
+                    <div class="gallery-item" data-category="cultos">
+                        <div class="gallery-image">
+                            <img src="/images/gallery/louvor-1.jpg" alt="Momento de Louvor" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjI0IiBmb250LWZhbWlseT0iQXJpYWwiPk1vbWVudG8gZGUgTG91dm9yPC90ZXh0Pgo8L3N2Zz4='">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Momento de Louvor</h3>
+                                    <p>Adoração Congregacional</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Comunidade -->
+                    <div class="gallery-item" data-category="eventos">
+                        <div class="gallery-image">
+                            <img src="/images/gallery/comunidade-1.jpg" alt="Confraternização" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjI0IiBmb250LWZhbWlseT0iQXJpYWwiPkNvbmZyYXRlcm5pemHDp8OjPC90ZXh0Pgo8L3N2Zz4='">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Confraternização</h3>
+                                    <p>Comunidade em ação</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5: Oração -->
+                    <div class="gallery-item" data-category="cultos">
+                        <div class="gallery-image">
+                            <img src="/images/gallery/oracao-1.jpg" alt="Culto de Oração" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjI0IiBmb250LWZhbWlseT0iQXJpYWwiPkN1bHRvIGRlIE9yYcOjbyPC90ZXh0Pgo8L3N2Zz4='">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Culto de Oração</h3>
+                                    <p>Intercessão Fervorosa</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 6: Alimentação Social -->
+                    <div class="gallery-item" data-category="social">
+                        <div class="gallery-image">
+                            <img src="/images/gallery/alimentacao-1.jpg" alt="Refeição Social" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjI0IiBmb250LWZhbWlseT0iQXJpYWwiPlJlZmVpY2fDo28gU29jaWFsPC90ZXh0Pgo8L3N2Zz4='">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Refeição Social</h3>
+                                    <p>Cuidado com as crianças</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 7: Família -->
+                    <div class="gallery-item" data-category="eventos">
+                        <div class="gallery-image">
+                            <img src="/images/gallery/familia-1.jpg" alt="Culto da Família" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjI0IiBmb250LWZhbWlseT0iQXJpYWwiPkN1bHRvIGRlIEZhbWlsaWE8L3RleHQ+Cjwvc3ZnPg=='">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Culto da Família</h3>
+                                    <p>Momento Juntos</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 8: Fachada da Igreja -->
+                    <div class="gallery-item" data-category="eventos">
+                        <div class="gallery-image">
+                            <img src="/images/gallery/igreja-1.jpg" alt="Fachada da IBS" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjI0IiBmb250LWZhbWlseT0iQXJpYWwiPkZhY2hhZGEgZGEgSUJTPDwvdGV4dD4KPC9zdmc+'">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Fachada da IBS</h3>
+                                    <p>Nossa Casa</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 9: Batismo -->
+                    <div class="gallery-item" data-category="eventos">
+                        <div class="gallery-image">
+                            <img src="/images/gallery/batismo-1.jpg" alt="Batismo" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjI0IiBmb250LWZhbWlseT0iQXJpYWwiPkJhdGlzbW88L3RleHQ+Cjwvc3ZnPg=='">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Cerimônia de Batismo</h3>
+                                    <p>Novo nascimento</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 10: Jovens -->
+                    <div class="gallery-item" data-category="eventos">
+                        <div class="gallery-image">
+                            <img src="/images/gallery/jovens-1.jpg" alt="Grupo de Jovens" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjI0IiBmb250LWZhbWlseT0iQXJpYWwiPkdydXBvIGRlIEpvdmVuczwvdGV4dD4KPC9zdmc+'">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Grupo de Jovens</h3>
+                                    <p>Futuro da igreja</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 11: Música -->
+                    <div class="gallery-item" data-category="cultos">
+                        <div class="gallery-image">
+                            <img src="/images/gallery/musica-1.jpg" alt="Ministério de Música" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjI0IiBmb250LWZhbWlseT0iQXJpYWwiPk1pbmlzdGVyaW8gZGUgTcO6c2ljYTwvdGV4dD4KPC9zdmc+'">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Ministério de Música</h3>
+                                    <p>Louvor e adoração</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 12: Voluntários -->
+                    <div class="gallery-item" data-category="social">
+                        <div class="gallery-image">
+                            <img src="/images/gallery/voluntarios-1.jpg" alt="Voluntários" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjI0IiBmb250LWZhbWlseT0iQXJpYWwiPlZvbHVudMOhcmlvczwvdGV4dD4KPC9zdmc+'">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Voluntários</h3>
+                                    <p>Servindo com amor</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal para visualização de imagens -->
+                    <div class="gallery-modal" id="galleryModal">
+                    <div class="modal-backdrop"></div>
+                    <div class="modal-content">
+                        <button class="modal-close" type="button">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <img id="modalImage" src="" alt="Imagem ampliada">
+                        <div class="modal-info">
+                            <h3 id="modalTitle"></h3>
+                            <p id="modalDescription"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Compartilhamento -->
+        <section class="content-section bg-light">
+            <div class="container">
+                <div class="share-section">
+                    <div class="share-content">
+                        <i class="fas fa-camera"></i>
+                        <h2>Compartilhe Seus Momentos</h2>
+                        <p>Você tem fotos dos cultos e atividades da IBS que gostaria de compartilhar na nossa galeria?</p>
+                        <p>Envie suas melhores fotos para: <strong>contato@igrejabsolidaria.com.br</strong></p>
+                        <a href="mailto:contato@igrejabsolidaria.com.br" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            Enviar Fotos
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer dinâmico -->
+    <footer id="footer"></footer>
+    <script src="/js/components.js"></script>
+</body>
+</html>

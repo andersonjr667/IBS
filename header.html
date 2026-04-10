@@ -1,0 +1,99 @@
+<!-- Header/Navegação - Componente Reutilizável -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="/" class="logo" aria-label="Igreja Batista Solidária">
+            <img src="/images/logo.jpg" alt="Logo IBS" class="logo-img">
+            <div class="logo-copy">
+                <strong>IBS</strong>
+                <span>Igreja Batista Solidária</span>
+            </div>
+        </a>
+        <button class="hamburger" id="hamburger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-panel">
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/sobre" class="nav-link">Sobre Nós</a></li>
+                <li><a href="/programacoes" class="nav-link">Programações</a></li>
+                <li><a href="/ministerios" class="nav-link">Ministérios</a></li>
+                <li><a href="/mensagens" class="nav-link">Mensagens</a></li>
+                <li><a href="/#contato" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="nav-auth">
+                <a href="/doacoes" class="nav-link donate-btn">Contribua</a>
+                <button id="btnLoginNav" class="btn btn-small nav-login-btn" type="button" data-auth-action="open-modal">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </button>
+                <div id="userMenuNav" class="user-menu" style="display: none;">
+                    <button class="user-info" type="button" data-auth-action="toggle-user-menu" aria-expanded="false" aria-controls="userActionsMenu">
+                        <span class="user-avatar"><i class="fas fa-user"></i></span>
+                        <span class="user-copy">
+                            <p>Olá, <span id="nomeUsuarioNav">Usuário</span></p>
+                            <small id="roleUsuarioNav">usuário</small>
+                        </span>
+                        <span class="user-caret"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="user-actions" id="userActionsMenu">
+                        <a href="#" class="user-link" data-auth-action="admin">
+                            <i class="fas fa-dashboard"></i> Dashboard
+                        </a>
+                        <a href="#" class="user-link">
+                            <i class="fas fa-user"></i> Perfil
+                        </a>
+                        <hr>
+                        <button class="user-link" type="button" data-auth-action="logout">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Modal de Login/Registro -->
+<div id="modalAuth" class="modal">
+    <div class="modal-content">
+        <button class="close" type="button" data-auth-action="close-modal">&times;</button>
+        
+        <div class="auth-tabs">
+            <button class="tab-btn active" type="button" data-auth-tab="login">Login</button>
+            <button class="tab-btn" type="button" data-auth-tab="registro">Registrar</button>
+        </div>
+        
+        <!-- ABA LOGIN -->
+        <div id="aba-login" class="auth-form">
+            <div class="auth-card-intro">
+                <span class="auth-eyebrow">Acesse sua conta</span>
+                <h2>Entrar</h2>
+                <p>Preencha seus dados para acompanhar a sua jornada, acessar recursos e interagir com a plataforma da igreja.</p>
+            </div>
+            <form id="formLogin">
+                <input type="email" placeholder="Email" id="loginEmail" required>
+                <input type="password" placeholder="Senha" id="loginSenha" required>
+                <button type="submit" class="btn btn-primary">Entrar</button>
+                <p class="form-help"><a href="#">Esqueceu a senha?</a></p>
+            </form>
+        </div>
+        
+        <!-- ABA REGISTRO -->
+        <div id="aba-registro" class="auth-form" style="display:none;">
+            <div class="auth-card-intro">
+                <span class="auth-eyebrow">Novo por aqui?</span>
+                <h2>Criar Conta</h2>
+                <p>Cadastre-se para receber novidades, organizar seu acesso e participar de futuras funcionalidades da IBS.</p>
+            </div>
+            <form id="formRegistro">
+                <input type="text" placeholder="Nome Completo" id="registroNome" required>
+                <input type="email" placeholder="Email" id="registroEmail" required>
+                <input type="tel" placeholder="Telefone (opcional)" id="registroTelefone">
+                <input type="password" placeholder="Senha (min 6 caracteres)" id="registroSenha" required>
+                <input type="password" placeholder="Confirme a Senha" id="registroSenhaConf" required>
+                <button type="submit" class="btn btn-primary">Registrar</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programações - Igreja Batista Solidária | IBS</title>
+    <meta name="description" content="Conheça os cultos, horários e programações da Igreja Batista Solidária">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/pages/programacoes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="programacoes-page">
+    <!-- Header dinâmico -->
+    <header id="header"></header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="hero-content">
+                <h1>Programações de Cultos</h1>
+                <p class="hero-subtitle">Venha fazer parte desta família</p>
+                <p class="hero-text">Participar dos cultos é alimentar a alma e fortalecer a fé</p>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <!-- Próximo Culto -->
+        <section class="content-section bg-primary">
+            <div class="container">
+                <div class="next-service">
+                    <div class="next-service-content">
+                        <h2>Próximo Culto</h2>
+                        <div class="service-info">
+                            <div class="service-detail">
+                                <i class="fas fa-calendar-day"></i>
+                                <span id="proximoDia">Carregando próximo encontro...</span>
+                            </div>
+                            <div class="service-detail">
+                                <i class="fas fa-clock"></i>
+                                <span id="proximoHorario">--:--</span>
+                            </div>
+                            <div class="service-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Rua das Flores, 123 - Centro, Belo Horizonte</span>
+                            </div>
+                        </div>
+                        <a href="/#contato" class="btn btn-light">Como Chegar</a>
+                    </div>
+                    <div class="next-service-image">
+                        <img src="/images/culto-placeholder.jpg" alt="Culto" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0iQXJpYWwiPkN1bHRvIGRlIEFkb3JhY2fDo288L3RleHQ+Cjwvc3ZnPg=='">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cultos Semanais -->
+        <section class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Cultos Semanais</h2>
+                    <p>Participar dos cultos é alimentar a alma e fortalecer a fé. Escolha o que melhor se adequa à sua rotina.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Culto de Domingo -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-sun"></i>
+                            </div>
+                            <div class="service-title">
+                                <h3>Culto de Domingo</h3>
+                                <span class="service-time">18:00</span>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <p>O culto principal da semana, momento de adoração, comunhão e ensinamento da Palavra de Deus.</p>
+                            <div class="service-details">
+                                <div class="service-detail">
+                                    <i class="fas fa-clock"></i>
+                                    <span>18:00 às 20:00</span>
+                                </div>
+                                <div class="service-detail">
+                                    <i class="fas fa-users"></i>
+                                    <span>Toda a família</span>
+                                </div>
+                                <div class="service-detail">
+                                    <i class="fas fa-music"></i>
+                                    <span>Louvor e adoração</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Culto de Quarta -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-moon"></i>
+                            </div>
+                            <div class="service-title">
+                                <h3>Culto de Quarta</h3>
+                                <span class="service-time">19:30</span>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <p>Momento de estudo bíblico, oração e comunhão. Culto mais intimista focado no crescimento espiritual.</p>
+                            <div class="service-details">
+                                <div class="service-detail">
+                                    <i class="fas fa-clock"></i>
+                                    <span>19:30 às 21:00</span>
+                                </div>
+                                <div class="service-detail">
+                                    <i class="fas fa-users"></i>
+                                    <span>Adultos e jovens</span>
+                                </div>
+                                <div class="service-detail">
+                                    <i class="fas fa-book-open"></i>
+                                    <span>Estudo bíblico</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Escola Dominical -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="service-title">
+                                <h3>Escola Dominical</h3>
+                                <span class="service-time">09:00</span>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <p>Ensino bíblico organizado por classes etárias, proporcionando crescimento espiritual para todas as idades.</p>
+                            <div class="service-details">
+                                <div class="service-detail">
+                                    <i class="fas fa-clock"></i>
+                                    <span>09:00 às 10:30</span>
+                                </div>
+                                <div class="service-detail">
+                                    <i class="fas fa-users"></i>
+                                    <span>Todas as idades</span>
+                                </div>
+                                <div class="service-detail">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                    <span>Ensino bíblico</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Localização -->
+        <section class="content-section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Onde Estamos</h2>
+                    <p>Venha nos visitar! Nossa igreja fica em localização privilegiada no centro de Belo Horizonte</p>
+                </div>
+
+                <div class="location-section">
+                    <div class="location-info">
+                        <div class="location-details">
+                            <div class="location-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Endereço:</strong><br>
+                                    Rua das Flores, 123<br>
+                                    Centro - Belo Horizonte/MG<br>
+                                    CEP: 30100-000
+                                </div>
+                            </div>
+
+                            <div class="location-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <strong>Telefone:</strong><br>
+                                    (31) 3333-4444
+                                </div>
+                            </div>
+
+                            <div class="location-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <strong>Email:</strong><br>
+                                    contato@igrejabsolidaria.com.br
+                                </div>
+                            </div>
+
+                            <div class="location-item">
+                                <i class="fas fa-parking"></i>
+                                <div>
+                                    <strong>Estacionamento:</strong><br>
+                                    Disponível no local
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="location-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.123456789012!2d-43.93456789012345!3d-19.912345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDU0JzQ0LjQiUyA0M8KwNTYnMDQuNCJX!5e0!3m2!1sen!2sbr!4v1234567890123!5m2!1sen!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Perguntas Frequentes</h2>
+                </div>
+
+                <div class="faq">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Preciso me vestir de alguma forma especial?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Não há dress code específico. Venha como você se sente confortável. Nossa prioridade é a presença do Espírito Santo, não as aparências externas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Posso levar minhas crianças?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Claro! Temos ministério infantil durante os cultos de domingo. As crianças são muito bem cuidadas e aprendem sobre Jesus de forma lúdica.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            É a primeira vez que vou a uma igreja, o que devo esperar?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Você será recebido com muito amor e sem julgamentos. O culto inclui louvor, oração, leitura bíblica e mensagem. Todos são bem-vindos!</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Há estacionamento gratuito?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim, dispomos de estacionamento gratuito no local. Também há opções de transporte público próximas à igreja.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer dinâmico -->
+    <footer id="footer"></footer>
+    <script src="/js/components.js"></script>
+</body>
+</html>

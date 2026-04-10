@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagens & Vídeos - Igreja Batista Solidária | IBS</title>
+    <meta name="description" content="Assista às mensagens e vídeos dos cultos da Igreja Batista Solidária">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/pages/mensagens.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="mensagens-page">
+    <!-- Header dinâmico -->
+    <header id="header"></header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="hero-content">
+                <h1>Mensagens & Vídeos</h1>
+                <p class="hero-subtitle">Palavra de Deus em vídeo</p>
+                <p class="hero-text">Assista aos cultos e mensagens gravadas da nossa igreja</p>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <!-- Vídeos em Destaque -->
+        <section class="content-section bg-primary">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Últimas Mensagens</h2>
+                    <p>Assista aos cultos mais recentes e fortaleça sua fé</p>
+                </div>
+
+                <div class="featured-videos">
+                    <div class="featured-video">
+                        <div class="video-wrapper">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-details">
+                            <h3>Culto de Celebração</h3>
+                            <p class="video-meta">
+                                <i class="fas fa-calendar"></i> Domingo, 15 de Dezembro 2024
+                                <span class="separator">•</span>
+                                <i class="fas fa-user"></i> Pr. João Silva
+                            </p>
+                            <p class="video-description">Tema: Renovação Já! Uma mensagem poderosa sobre renovação espiritual e crescimento na fé.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria de Vídeos -->
+        <section class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Galeria de Mensagens</h2>
+                    <p>Explore nossa coleção completa de cultos e ensinamentos</p>
+                </div>
+
+                <div class="video-filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="culto">Cultos</button>
+                    <button class="filter-btn" data-filter="estudo">Estudos</button>
+                    <button class="filter-btn" data-filter="especial">Especiais</button>
+                </div>
+
+                <div class="video-grid">
+                    <!-- Vídeo 1 -->
+                    <div class="video-card" data-category="culto">
+                        <div class="video-thumbnail">
+                            <img src="/images/video-placeholder-1.jpg" alt="Culto de Celebração" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0iQXJpYWwiPkN1bHRvIGRlIENlbGVicmHDp8OjPC90ZXh0Pgo8L3N2Zz4='">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Culto de Celebração</h3>
+                            <p class="video-meta">
+                                <i class="fas fa-calendar"></i> Domingo - 18:00
+                                <span class="separator">•</span>
+                                <i class="fas fa-clock"></i> 1h 30min
+                            </p>
+                            <p class="video-description">Renovação Já! Uma mensagem sobre renovação espiritual.</p>
+                            <a href="#" class="btn btn-primary">Assistir</a>
+                        </div>
+                    </div>
+
+                    <!-- Vídeo 2 -->
+                    <div class="video-card" data-category="culto">
+                        <div class="video-thumbnail">
+                            <img src="/images/video-placeholder-2.jpg" alt="Culto da Família" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0iQXJpYWwiPkN1bHRvIGRlIENlbGVicmHDp8OjPC90ZXh0Pgo8L3N2Zz4='">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Culto da Família</h3>
+                            <p class="video-meta">
+                                <i class="fas fa-calendar"></i> Domingo - 19:00
+                                <span class="separator">•</span>
+                                <i class="fas fa-clock"></i> 1h 15min
+                            </p>
+                            <p class="video-description">Comunhão em Família - Momentos especiais de adoração.</p>
+                            <a href="#" class="btn btn-primary">Assistir</a>
+                        </div>
+                    </div>
+
+                    <!-- Vídeo 3 -->
+                    <div class="video-card" data-category="estudo">
+                        <div class="video-thumbnail">
+                            <img src="/images/video-placeholder-3.jpg" alt="Estudo Bíblico" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0iQXJpYWwiPkVzdHVkbyBCw61ibGljbzwvdGV4dD4KPC9zdmc+'">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Estudo Bíblico</h3>
+                            <p class="video-meta">
+                                <i class="fas fa-calendar"></i> Quarta - 19:30
+                                <span class="separator">•</span>
+                                <i class="fas fa-clock"></i> 45min
+                            </p>
+                            <p class="video-description">Intercessão e Fortalecimento - Oração poderosa.</p>
+                            <a href="#" class="btn btn-primary">Assistir</a>
+                        </div>
+                    </div>
+
+                    <!-- Vídeo 4 -->
+                    <div class="video-card" data-category="especial">
+                        <div class="video-thumbnail">
+                            <img src="/images/video-placeholder-4.jpg" alt="Culto Especial" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0iQXJpYWwiPkN1bHRvIEVzcGVjaWFsPC90ZXh0Pgo8L3N2Zz4='">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Culto Especial</h3>
+                            <p class="video-meta">
+                                <i class="fas fa-calendar"></i> Especial
+                                <span class="separator">•</span>
+                                <i class="fas fa-clock"></i> 2h
+                            </p>
+                            <p class="video-description">Celebração especial com batismos e testemunhos.</p>
+                            <a href="#" class="btn btn-primary">Assistir</a>
+                        </div>
+                    </div>
+
+                    <!-- Vídeo 5 -->
+                    <div class="video-card" data-category="culto">
+                        <div class="video-thumbnail">
+                            <img src="/images/video-placeholder-5.jpg" alt="Culto Jovem" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0iQXJpYWwiPkN1bHRvIEpvdmVtPC90ZXh0Pgo8L3N2Zz4='">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Culto Jovem</h3>
+                            <p class="video-meta">
+                                <i class="fas fa-calendar"></i> Sexta - 20:00
+                                <span class="separator">•</span>
+                                <i class="fas fa-clock"></i> 1h 20min
+                            </p>
+                            <p class="video-description">Momento especial para os jovens da igreja.</p>
+                            <a href="#" class="btn btn-primary">Assistir</a>
+                        </div>
+                    </div>
+
+                    <!-- Vídeo 6 -->
+                    <div class="video-card" data-category="estudo">
+                        <div class="video-thumbnail">
+                            <img src="/images/video-placeholder-6.jpg" alt="Estudo Profético" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0iQXJpYWwiPkVzdHVkbyBQcm9mw6l0aWNvPC90ZXh0Pgo8L3N2Zz4='">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Estudo Profético</h3>
+                            <p class="video-meta">
+                                <i class="fas fa-calendar"></i> Sábado - 14:00
+                                <span class="separator">•</span>
+                                <i class="fas fa-clock"></i> 1h
+                            </p>
+                            <p class="video-description">Estudo profundo sobre profecias bíblicas.</p>
+                            <a href="#" class="btn btn-primary">Assistir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nota sobre vídeos -->
+                <div class="video-note">
+                    <div class="note-content">
+                        <i class="fas fa-info-circle"></i>
+                        <div>
+                            <h4>Como adicionar vídeos reais</h4>
+                            <p>Para adicionar vídeos do YouTube, substitua o placeholder por um iframe com o código de incorporação do vídeo.</p>
+                            <code>&lt;iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer dinâmico -->
+    <footer id="footer"></footer>
+    <script src="/js/components.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+.ministerios-page {
+    background:
+        radial-gradient(circle at top left, rgba(212, 136, 119, 0.12), transparent 34%),
+        linear-gradient(180deg, #FFFFFF, rgba(240, 240, 240, 0.88));
+}
+
+.ministerios-page .page-hero {
+    background:
+        linear-gradient(135deg, rgba(26, 26, 26, 0.82), rgba(138, 45, 93, 0.88)),
+        radial-gradient(circle at right center, rgba(150, 59, 97, 0.3), transparent 34%);
+}
+
+.ministerios-page .section-header {
+    max-width: 760px;
+}
+
+.ministerios-page .ministries-grid {
+    gap: 1.6rem;
+}
+
+.ministerios-page .ministry-card {
+    position: relative;
+    border-radius: 30px;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(240, 240, 240, 0.96));
+    border: 1px solid rgba(138, 45, 93, 0.12);
+    box-shadow: 0 22px 46px rgba(26, 26, 26, 0.08);
+    overflow: hidden;
+    transition: transform 0.32s ease, box-shadow 0.32s ease, border-color 0.32s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.ministerios-page .ministry-card::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 6px;
+    background: linear-gradient(90deg, #8A2D5D, #D48877);
+}
+
+.ministerios-page .ministry-image {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, rgba(138, 45, 93, 0.16), rgba(212, 136, 119, 0.24));
+    object-fit: cover;
+    display: block;
+}
+
+.ministerios-page .ministry-image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, rgba(138, 45, 93, 0.12), rgba(212, 136, 119, 0.18));
+    font-size: 3rem;
+    color: rgba(138, 45, 93, 0.3);
+}
+
+.ministerios-page .ministry-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(138, 45, 93, 0.24);
+    box-shadow: 0 30px 60px rgba(26, 26, 26, 0.12);
+}
+
+.ministerios-page .ministry-icon {
+    background: linear-gradient(135deg, #8A2D5D, #A55066);
+    color: #FFFFFF;
+    box-shadow: 0 14px 30px rgba(138, 45, 93, 0.22);
+}
+
+.ministerios-page .ministry-content h3,
+.ministerios-page .cta-section h2 {
+    color: #1A1A1A;
+}
+
+.ministerios-page .ministry-content p,
+.ministerios-page .ministry-details li,
+.ministerios-page .cta-section p {
+    color: #374151;
+}
+
+.ministerios-page .ministry-details {
+    margin-top: 1.25rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(138, 45, 93, 0.08);
+}
+
+.ministerios-page .ministry-details h4 {
+    color: #8A2D5D;
+}
+
+.ministerios-page .ministry-details ul {
+    display: grid;
+    gap: 0.7rem;
+    padding-left: 1.1rem;
+}
+
+.ministerios-page .cta-section {
+    position: relative;
+    padding: 3rem;
+    border-radius: 34px;
+    overflow: hidden;
+    background:
+        linear-gradient(135deg, rgba(138, 45, 93, 0.94), rgba(107, 30, 61, 0.94)),
+        radial-gradient(circle at top right, rgba(212, 136, 119, 0.34), transparent 34%);
+    box-shadow: 0 28px 56px rgba(107, 30, 61, 0.24);
+}
+
+.ministerios-page .cta-section::after {
+    content: "SERVIR";
+    position: absolute;
+    right: 2rem;
+    bottom: 0.8rem;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(3rem, 10vw, 5.8rem);
+    color: rgba(255, 255, 255, 0.07);
+    letter-spacing: 0.08em;
+}
+
+.ministerios-page .cta-section h2,
+.ministerios-page .cta-section p {
+    color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+}
+
+.ministerios-page .cta-buttons {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .ministerios-page .ministry-card,
+    .ministerios-page .cta-section {
+        border-radius: 24px;
+    }
+
+    .ministerios-page .cta-section {
+        padding: 2rem 1.4rem;
+    }
+
+    .ministerios-page .ministry-image,
+    .ministerios-page .ministry-image-placeholder {
+        height: 160px;
+    }
+}

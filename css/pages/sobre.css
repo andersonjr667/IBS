@@ -1,0 +1,514 @@
+/* ==================== SOBRE - Estilo Padrão ==================== */
+
+.sobre-page {
+    background:
+        radial-gradient(circle at top left, rgba(212, 136, 119, 0.12), transparent 34%),
+        linear-gradient(180deg, #FFFFFF, rgba(240, 240, 240, 0.88));
+}
+
+/* ==================== Page Hero ==================== */
+.sobre-page .page-hero {
+    background:
+        linear-gradient(135deg, rgba(26, 26, 26, 0.82), rgba(138, 45, 93, 0.88)),
+        radial-gradient(circle at top right, rgba(212, 136, 119, 0.3), transparent 34%);
+    overflow: hidden;
+    position: relative;
+}
+
+.sobre-page .page-hero::after {
+    content: "IBS";
+    position: absolute;
+    right: 6%;
+    bottom: -2rem;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(5rem, 15vw, 10rem);
+    color: rgba(255, 255, 255, 0.08);
+    letter-spacing: 0.12em;
+    pointer-events: none;
+}
+
+/* ==================== Intro Band ==================== */
+.sobre-page .about-page-intro {
+    position: relative;
+    margin-top: -3.4rem;
+    z-index: 3;
+    padding: 2rem 0 1rem;
+}
+
+.sobre-page .about-page-intro-grid {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(138, 45, 93, 0.12);
+    border-radius: 30px;
+    box-shadow: 0 22px 46px rgba(26, 26, 26, 0.1);
+    backdrop-filter: blur(12px);
+    padding: 2rem;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.sobre-page .about-page-intro-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobre-page .about-page-intro-copy h2 {
+    font-size: clamp(1.8rem, 5vw, 2.4rem);
+    color: var(--gray-darker);
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+}
+
+.sobre-page .about-page-intro-copy p {
+    color: var(--gray-dark);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.sobre-page .about-page-intro-card {
+    background: linear-gradient(135deg, rgba(138, 45, 93, 0.12), rgba(212, 136, 119, 0.08));
+    border: 1px solid rgba(138, 45, 93, 0.14);
+    border-radius: 24px;
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.sobre-page .about-page-intro-card strong {
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+.sobre-page .about-page-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sobre-page .about-page-checklist li {
+    padding: 0.6rem 0;
+    color: var(--gray-dark);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    border-bottom: 1px solid rgba(138, 45, 93, 0.08);
+    font-size: 0.95rem;
+}
+
+.sobre-page .about-page-checklist li::before {
+    content: "✓";
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 1.2rem;
+    width: 24px;
+}
+
+.sobre-page .about-page-checklist li:last-child {
+    border-bottom: none;
+}
+
+/* ==================== Section Header ==================== */
+.sobre-page .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.sobre-page .section-header h2 {
+    font-size: clamp(2rem, 6vw, 2.8rem);
+    color: var(--gray-darker);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.sobre-page .section-header p {
+    font-size: 1.1rem;
+    color: var(--gray-dark);
+    max-width: 50ch;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.sobre-page .section-kicker {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.8rem;
+}
+
+/* ==================== About Timeline ==================== */
+.sobre-page .about-detailed {
+    padding: 2rem 0;
+}
+
+.sobre-page .about-timeline-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.6rem;
+    margin-top: 2rem;
+}
+
+.sobre-page .about-story-card {
+    border-radius: 26px;
+    border: 1px solid rgba(138, 45, 93, 0.12);
+    background: linear-gradient(180deg, #FFFFFF, rgba(240, 240, 240, 0.95));
+    box-shadow: 0 18px 40px rgba(26, 26, 26, 0.08);
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: all 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sobre-page .about-story-card.featured {
+    background: linear-gradient(135deg, rgba(138, 45, 93, 0.94), rgba(107, 30, 61, 0.94));
+    box-shadow: 0 22px 56px rgba(138, 45, 93, 0.26);
+    color: var(--white);
+}
+
+.sobre-page .about-story-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 26px 54px rgba(26, 26, 26, 0.12);
+    border-color: rgba(138, 45, 93, 0.24);
+}
+
+.sobre-page .about-story-card.featured:hover {
+    box-shadow: 0 28px 62px rgba(138, 45, 93, 0.28);
+}
+
+.sobre-page .history-year {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.sobre-page .about-story-card.featured .history-year {
+    color: var(--accent);
+}
+
+.sobre-page .history-content h3 {
+    font-size: 1.2rem;
+    color: var(--gray-darker);
+    margin: 0.5rem 0;
+    line-height: 1.3;
+}
+
+.sobre-page .about-story-card.featured h3 {
+    color: var(--white);
+}
+
+.sobre-page .history-content p {
+    color: var(--gray-dark);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.sobre-page .about-story-card.featured p {
+    color: rgba(240, 240, 240, 0.9);
+}
+
+/* ==================== Institutional Identity ==================== */
+.sobre-page .institutional-identity {
+    padding: 3rem 0;
+    background: linear-gradient(180deg, rgba(240, 240, 240, 0.5), #FFFFFF);
+}
+
+.sobre-page .mission-vision-values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.sobre-page .mvv-item {
+    border-radius: 26px;
+    border: 1px solid rgba(138, 45, 93, 0.12);
+    background: linear-gradient(180deg, #FFFFFF, rgba(240, 240, 240, 0.98));
+    box-shadow: 0 18px 40px rgba(26, 26, 26, 0.08);
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    transition: all 0.32s ease;
+}
+
+.sobre-page .mvv-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 26px 54px rgba(26, 26, 26, 0.12);
+    border-color: rgba(138, 45, 93, 0.24);
+}
+
+.sobre-page .mvv-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    border-radius: 16px;
+    color: var(--white);
+    font-size: 1.8rem;
+    box-shadow: 0 12px 28px rgba(138, 45, 93, 0.22);
+}
+
+.sobre-page .mvv-item h3 {
+    font-size: 1.3rem;
+    color: var(--gray-darker);
+    margin: 0;
+}
+
+.sobre-page .mvv-item p {
+    color: var(--gray-dark);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.sobre-page .identity-summary-card {
+    background: linear-gradient(135deg, rgba(138, 45, 93, 0.12), rgba(212, 136, 119, 0.08));
+    border: 1px solid rgba(138, 45, 93, 0.14);
+    border-radius: 24px;
+    padding: 2rem;
+    text-align: center;
+    max-width: 60ch;
+    margin: 0 auto;
+}
+
+.sobre-page .identity-summary-card strong {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.sobre-page .identity-summary-card p {
+    color: var(--gray-dark);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ==================== Values Section ==================== */
+.sobre-page .values-section {
+    padding: 3rem 0;
+}
+
+.sobre-page .values-detailed-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.6rem;
+    margin-top: 2rem;
+}
+
+.sobre-page .value-card {
+    border-radius: 26px;
+    border: 1px solid rgba(138, 45, 93, 0.12);
+    background: linear-gradient(180deg, #FFFFFF, rgba(240, 240, 240, 0.95));
+    box-shadow: 0 18px 40px rgba(26, 26, 26, 0.08);
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    transition: all 0.32s ease;
+}
+
+.sobre-page .value-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 26px 54px rgba(26, 26, 26, 0.12);
+    border-color: rgba(138, 45, 93, 0.24);
+}
+
+.sobre-page .value-card h3 {
+    font-size: 1.1rem;
+    color: var(--primary);
+    margin: 0;
+}
+
+.sobre-page .value-card p {
+    color: var(--gray-dark);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ==================== Leadership Section ==================== */
+.sobre-page .leadership-detailed {
+    padding: 3rem 0;
+    background: linear-gradient(180deg, rgba(240, 240, 240, 0.5), #FFFFFF);
+}
+
+.sobre-page .leader-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.sobre-page .leader-card {
+    border-radius: 26px;
+    border: 1px solid rgba(138, 45, 93, 0.12);
+    background: linear-gradient(180deg, #FFFFFF, rgba(240, 240, 240, 0.98));
+    box-shadow: 0 18px 40px rgba(26, 26, 26, 0.08);
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    transition: all 0.32s ease;
+}
+
+.sobre-page .leader-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 26px 54px rgba(26, 26, 26, 0.12);
+    border-color: rgba(138, 45, 93, 0.24);
+}
+
+.sobre-page .leader-avatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(138, 45, 93, 0.16), rgba(212, 136, 119, 0.24));
+    border: 3px solid rgba(138, 45, 93, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.sobre-page .leader-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--gray-darker);
+    margin: 0;
+}
+
+.sobre-page .leader-role {
+    font-size: 0.95rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin: 0;
+}
+
+.sobre-page .leader-description {
+    color: var(--gray-dark);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ==================== Visit Section ==================== */
+.sobre-page .about-visit-section {
+    padding: 3rem 0;
+}
+
+.sobre-page .about-visit-card {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(138, 45, 93, 0.12);
+    border-radius: 30px;
+    box-shadow: 0 22px 46px rgba(26, 26, 26, 0.1);
+    backdrop-filter: blur(12px);
+    padding: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.sobre-page .about-visit-card h2 {
+    font-size: 2rem;
+    color: var(--gray-darker);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.sobre-page .about-visit-card p {
+    color: var(--gray-dark);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.sobre-page .about-visit-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.sobre-page .about-visit-actions .btn {
+    flex: 1;
+    min-width: 140px;
+}
+
+/* ==================== Responsividade ==================== */
+@media (max-width: 992px) {
+    .sobre-page .about-page-intro-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-page .about-visit-card {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .sobre-page .page-hero::after {
+        font-size: clamp(3rem, 10vw, 5rem);
+        bottom: -1rem;
+    }
+
+    .sobre-page .about-page-intro {
+        margin-top: -2rem;
+    }
+
+    .sobre-page .about-page-intro-grid {
+        padding: 1.6rem;
+        gap: 1.5rem;
+        border-radius: 22px;
+    }
+
+    .sobre-page .about-page-intro-card {
+        border-radius: 20px;
+        padding: 1.4rem;
+    }
+
+    .sobre-page .about-timeline-grid,
+    .sobre-page .mission-vision-values,
+    .sobre-page .values-detailed-grid,
+    .sobre-page .leader-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .sobre-page .about-story-card,
+    .sobre-page .mvv-item,
+    .sobre-page .value-card,
+    .sobre-page .leader-card {
+        border-radius: 22px;
+        padding: 1.4rem;
+    }
+
+    .sobre-page .mvv-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 1.6rem;
+    }
+
+    .sobre-page .about-visit-actions {
+        flex-direction: column;
+    }
+
+    .sobre-page .about-visit-actions .btn {
+        width: 100%;
+    }
+
+    .sobre-page .section-header h2 {
+        font-size: 1.8rem;
+    }
+}

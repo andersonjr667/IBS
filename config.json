@@ -1,0 +1,164 @@
+{
+  "institucao": {
+    "nomeOficial": "Igreja Batista Solidária",
+    "sigla": "IBS",
+    "fundacao": {
+      "data": "20 de junho de 1959",
+      "anosExistencia": 66
+    },
+    "fundadora": {
+      "nome": "Rosalee Mills Appleby",
+      "descricao": "Missionária norte-americana e 'mãe do movimento de renovação espiritual no Brasil'",
+      "chegadaBrasil": 1924
+    },
+    "liderancaAtual": {
+      "nome": "Pastor Lincoln Portela",
+      "cargo": "Presidente"
+    }
+  },
+  "localizacao": {
+    "endereco": "Rua Aiuruoca, nº 125",
+    "bairro": "Bairro São Paulo",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "cep": "31910-130",
+    "coordenadasGPS": {
+      "latitude": -19.8916,
+      "longitude": -43.9541
+    }
+  },
+  "contatos": {
+    "telefonePrincipal": "(31) 3041-0000",
+    "email": "contato@ibs.com.br",
+    "whatsapp": "+5531984100000",
+    "horarioAtendimento": {
+      "segundaSexta": "9h às 17h",
+      "sabado": "9h às 13h",
+      "domingo": "Cultos programados"
+    }
+  },
+  "redesSociais": {
+    "instagram": "igrejabatistasolidaria",
+    "facebook": "Igreja-Batista-Solidaria",
+    "youtube": "igrejabatistasolidaria",
+    "whatsapp": "5531984100000"
+  },
+  "tema2026": {
+    "temaAno": "Ano do Crescimento Espiritual",
+    "lema1": "Presente de Deus",
+    "lema2": "Renovação Já!",
+    "foco": "Renovação espiritual e ação social"
+  },
+  "cultos": [
+    {
+      "dia": "Domingo",
+      "horario": "10:00h",
+      "tipo": "Culto de Celebração & Escola Bíblica",
+      "descricao": "Um momento especial de adoração, louvor e ensino da Palavra de Deus"
+    },
+    {
+      "dia": "Domingo",
+      "horario": "19:00h",
+      "tipo": "Culto da Família",
+      "descricao": "Reunião familiar com todos os membros da comunidade IBS"
+    },
+    {
+      "dia": "Quinta-feira",
+      "horario": "20:00h",
+      "tipo": "Culto de Oração e Doutrina",
+      "descricao": "Encontro para aprofundamento na Palavra e intercessão"
+    }
+  ],
+  "missaoVisao": {
+    "missao": "Pregar a palavra de Deus com foco na renovação espiritual e no serviço social",
+    "valores": [
+      "Amor",
+      "Carinho",
+      "Zelo",
+      "Solidariedade",
+      "Compromisso Bíblico"
+    ]
+  },
+  "centroSocial": {
+            "nome": "Acao Solidaria IBS",
+    "criancasAtendidas": "1000+",
+    "foco": [
+      "Educação de qualidade",
+      "Alimentação nutritiva",
+      "Carinho e cuidado integral",
+      "Evangelização e esperança",
+      "Apoio às famílias em vulnerabilidade"
+    ],
+            "slogan": "Cada iniciativa de cuidado e um lugar de amor, carinho e zelo"
+  },
+  "ministerios": [
+    {
+      "nome": "Música & Louvor",
+      "icon": "fa-music",
+      "descricao": "Adoração contemporânea e congregacional que toca o coração"
+    },
+    {
+      "nome": "Renovação Espiritual",
+      "icon": "fa-book",
+      "descricao": "Avivamento bíblico, oração fervorosa e estudo da Palavra"
+    },
+    {
+      "nome": "Crianças & Adolescentes",
+      "icon": "fa-child",
+      "descricao": "Trabalho focado no crescimento espiritual desde a infância"
+    },
+    {
+      "nome": "Família",
+      "icon": "fa-heart-pulse",
+      "descricao": "Aconselhamento e cultos específicos para fortalecer os lares"
+    },
+    {
+      "nome": "Ação Social",
+      "icon": "fa-hands-helping",
+      "descricao": "Projetos efetivos de transformação e esperança na comunidade"
+    },
+    {
+      "nome": "Comunicação",
+      "icon": "fa-globe",
+      "descricao": "Rádio, TV e plataformas digitais levando a Palavra ao mundo"
+    }
+  ],
+  "metodosPagamento": {
+    "pix": {
+      "tipo": "PIX",
+      "chave": "pix@igrejabatistasolidaria.com.br",
+      "instrucoes": "Copie a chave e faça sua transferência"
+    },
+    "cartao": {
+      "tipo": "Cartão de Crédito",
+      "instrucoes": "Acesse nosso portal de doações online"
+    },
+    "transferencia": {
+      "tipo": "Transferência Bancária",
+      "instrucoes": "Solicite os dados bancários pelo telefone"
+    },
+    "presencial": {
+      "tipo": "Presencialmente",
+            "local": "Na Igreja",
+      "horarios": "Domingo: 10h e 19h"
+    }
+  },
+  "cores": {
+    "primaria": "#8A2D5D",
+    "primariaEscura": "#6B1E3D",
+    "secundaria": "#A55066",
+    "accent": "#D48877",
+    "roxo": "#963B61",
+    "cinzaEscura": "#374151",
+    "preto": "#1A1A1A",
+    "branco": "#FFFFFF",
+    "cinzaClara": "#F0F0F0"
+  },
+  "configuracoes": {
+    "nomeWebsite": "Igreja Batista Solidária - IBS",
+    "descricao": "Renovação Espiritual e Ação Social em Belo Horizonte",
+    "urlWebsite": "https://igrejabatistasolidaria.com.br",
+    "ano": 2026,
+    "linguagem": "pt-BR"
+  }
+}

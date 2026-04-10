@@ -1,0 +1,124 @@
+.doacoes-page {
+    background:
+        radial-gradient(circle at top left, rgba(138, 45, 93, 0.12), transparent 34%),
+        linear-gradient(180deg, #FFFFFF, rgba(240, 240, 240, 0.88));
+}
+
+.doacoes-page .page-hero {
+    background:
+        linear-gradient(135deg, rgba(107, 30, 61, 0.88), rgba(26, 26, 26, 0.84)),
+        radial-gradient(circle at right center, rgba(212, 136, 119, 0.24), transparent 36%);
+}
+
+.doacoes-page .purpose-grid,
+.doacoes-page .donation-methods,
+.doacoes-page .testimonials {
+    gap: 1.6rem;
+}
+
+.doacoes-page .purpose-item,
+.doacoes-page .donation-card,
+.doacoes-page .testimonial-card,
+.doacoes-page .faq-item {
+    border-radius: 28px;
+    border: 1px solid rgba(138, 45, 93, 0.12);
+    background: linear-gradient(180deg, #FFFFFF, rgba(240, 240, 240, 0.96));
+    box-shadow: 0 20px 46px rgba(26, 26, 26, 0.08);
+}
+
+.doacoes-page .purpose-item {
+    padding: 2rem 1.6rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doacoes-page .purpose-item:hover,
+.doacoes-page .donation-card:hover,
+.doacoes-page .testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 28px 58px rgba(26, 26, 26, 0.12);
+}
+
+.doacoes-page .purpose-icon,
+.doacoes-page .donation-icon {
+    background: linear-gradient(135deg, #8A2D5D, #D48877);
+    color: #FFFFFF;
+    box-shadow: 0 12px 26px rgba(138, 45, 93, 0.22);
+}
+
+.doacoes-page .purpose-item h3,
+.doacoes-page .donation-content h3,
+.doacoes-page .testimonial-author strong {
+    color: #1A1A1A;
+}
+
+.doacoes-page .purpose-item p,
+.doacoes-page .donation-content p,
+.doacoes-page .testimonial-content p,
+.doacoes-page .testimonial-author span,
+.doacoes-page .faq-answer p {
+    color: #374151;
+}
+
+.doacoes-page .donation-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.doacoes-page .donation-card::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 6px;
+    background: linear-gradient(180deg, #D48877, #8A2D5D);
+}
+
+.doacoes-page .pix-key {
+    display: inline-block;
+    padding: 0.3rem 0.7rem;
+    margin-top: 0.25rem;
+    border-radius: 999px;
+    background: rgba(212, 136, 119, 0.18);
+    color: #8A2D5D;
+    font-weight: 700;
+}
+
+.doacoes-page .small-text {
+    color: #374151;
+}
+
+.doacoes-page .testimonial-card {
+    position: relative;
+    padding: 1.8rem;
+}
+
+.doacoes-page .testimonial-card::after {
+    content: "";
+    position: absolute;
+    right: 1.2rem;
+    top: 1.2rem;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(138, 45, 93, 0.08);
+}
+
+.doacoes-page .faq-item {
+    margin-bottom: 1rem;
+}
+
+.doacoes-page .faq-question {
+    color: #1A1A1A;
+}
+
+.doacoes-page .faq-question i {
+    color: #8A2D5D;
+}
+
+@media (max-width: 768px) {
+    .doacoes-page .purpose-item,
+    .doacoes-page .donation-card,
+    .doacoes-page .testimonial-card,
+    .doacoes-page .faq-item {
+        border-radius: 22px;
+    }
+}

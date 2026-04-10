@@ -1,0 +1,188 @@
+.programacoes-page {
+    background:
+        radial-gradient(circle at top right, rgba(138, 45, 93, 0.12), transparent 30%),
+        linear-gradient(180deg, #FFFFFF, rgba(240, 240, 240, 0.82));
+}
+
+.programacoes-page .page-hero {
+    background:
+        linear-gradient(135deg, rgba(107, 30, 61, 0.86), rgba(26, 26, 26, 0.82)),
+        radial-gradient(circle at left center, rgba(212, 136, 119, 0.26), transparent 36%);
+}
+
+.programacoes-page .next-service {
+    grid-template-columns: 1.2fr 0.9fr;
+    background: linear-gradient(135deg, #8A2D5D, #6B1E3D);
+    border-radius: 36px;
+    box-shadow: 0 28px 54px rgba(107, 30, 61, 0.24);
+    overflow: hidden;
+}
+
+.programacoes-page .next-service-content {
+    padding: 3rem;
+}
+
+.programacoes-page .next-service-content h2,
+.programacoes-page .next-service-content span,
+.programacoes-page .next-service-content .service-detail i {
+    color: #FFFFFF;
+}
+
+.programacoes-page .service-info {
+    display: grid;
+    gap: 1rem;
+    margin: 1.8rem 0 2rem;
+}
+
+.programacoes-page .service-detail {
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+    padding: 1rem 1.1rem;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.programacoes-page .next-service-image {
+    min-height: 100%;
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0.08), rgba(26, 26, 26, 0.18));
+}
+
+.programacoes-page .next-service-image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.programacoes-page .services-grid {
+    gap: 1.6rem;
+}
+
+.programacoes-page .service-card {
+    border: 1px solid rgba(138, 45, 93, 0.12);
+    border-radius: 28px;
+    background: linear-gradient(180deg, #FFFFFF, rgba(240, 240, 240, 0.96));
+    box-shadow: 0 20px 46px rgba(26, 26, 26, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.programacoes-page .service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 28px 56px rgba(26, 26, 26, 0.12);
+}
+
+.programacoes-page .service-header {
+    padding: 1.6rem 1.6rem 1rem;
+}
+
+.programacoes-page .service-icon {
+    background: linear-gradient(135deg, #A55066, #8A2D5D);
+    color: #FFFFFF;
+    box-shadow: 0 12px 28px rgba(138, 45, 93, 0.2);
+}
+
+.programacoes-page .service-time {
+    display: inline-flex;
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;
+    background: rgba(212, 136, 119, 0.18);
+    color: #8A2D5D;
+}
+
+.programacoes-page .service-content {
+    padding: 0 1.6rem 1.8rem;
+}
+
+.programacoes-page .service-content p,
+.programacoes-page .location-item div,
+.programacoes-page .faq-answer p {
+    color: #374151;
+}
+
+.programacoes-page .service-details .service-detail {
+    background: #FFFFFF;
+    border-color: rgba(138, 45, 93, 0.1);
+}
+
+.programacoes-page .location-section {
+    padding: 0;
+}
+
+.programacoes-page .location-info {
+    display: grid;
+    grid-template-columns: 0.92fr 1.08fr;
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+.programacoes-page .location-details,
+.programacoes-page .location-map {
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 20px 44px rgba(26, 26, 26, 0.08);
+}
+
+.programacoes-page .location-details {
+    background: linear-gradient(180deg, #FFFFFF, rgba(240, 240, 240, 0.94));
+    border: 1px solid rgba(138, 45, 93, 0.12);
+    padding: 1.5rem;
+}
+
+.programacoes-page .location-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(138, 45, 93, 0.08);
+}
+
+.programacoes-page .location-item:last-child {
+    border-bottom: 0;
+}
+
+.programacoes-page .location-item i {
+    color: #8A2D5D;
+}
+
+.programacoes-page .location-map iframe {
+    min-height: 100%;
+    filter: saturate(0.9) contrast(1.05);
+}
+
+.programacoes-page .faq-item {
+    border: 1px solid rgba(138, 45, 93, 0.12);
+    border-radius: 22px;
+    margin-bottom: 1rem;
+    background: #FFFFFF;
+    box-shadow: 0 12px 28px rgba(26, 26, 26, 0.05);
+}
+
+.programacoes-page .faq-question {
+    color: #1A1A1A;
+}
+
+.programacoes-page .faq-question i {
+    color: #8A2D5D;
+}
+
+@media (max-width: 900px) {
+    .programacoes-page .next-service,
+    .programacoes-page .location-info {
+        grid-template-columns: 1fr;
+    }
+
+    .programacoes-page .next-service-content {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .programacoes-page .next-service {
+        border-radius: 24px;
+    }
+
+    .programacoes-page .service-card,
+    .programacoes-page .location-details,
+    .programacoes-page .location-map,
+    .programacoes-page .faq-item {
+        border-radius: 22px;
+    }
+}

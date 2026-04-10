@@ -1,0 +1,158 @@
+.mensagens-page {
+    background:
+        radial-gradient(circle at top right, rgba(150, 59, 97, 0.16), transparent 30%),
+        linear-gradient(180deg, rgba(240, 240, 240, 0.7), #FFFFFF 22%);
+}
+
+.mensagens-page .page-hero {
+    background:
+        linear-gradient(135deg, rgba(26, 26, 26, 0.9), rgba(107, 30, 61, 0.88)),
+        radial-gradient(circle at left center, rgba(212, 136, 119, 0.24), transparent 36%);
+}
+
+.mensagens-page .featured-video {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 0;
+    border-radius: 34px;
+    overflow: hidden;
+    background: #FFFFFF;
+    box-shadow: 0 28px 58px rgba(26, 26, 26, 0.12);
+}
+
+.mensagens-page .video-wrapper {
+    min-height: 100%;
+    background: #1A1A1A;
+}
+
+.mensagens-page .video-details {
+    padding: 2.4rem;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(240, 240, 240, 0.96));
+}
+
+.mensagens-page .video-details h3,
+.mensagens-page .video-info h3,
+.mensagens-page .video-note h4 {
+    color: #1A1A1A;
+}
+
+.mensagens-page .video-description,
+.mensagens-page .video-meta,
+.mensagens-page .video-note p {
+    color: #374151;
+}
+
+.mensagens-page .video-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.mensagens-page .filter-btn {
+    border: 1px solid rgba(138, 45, 93, 0.18);
+    background: #FFFFFF;
+    color: #8A2D5D;
+    border-radius: 999px;
+    padding: 0.8rem 1.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.mensagens-page .filter-btn.active,
+.mensagens-page .filter-btn:hover {
+    background: linear-gradient(135deg, #8A2D5D, #A55066);
+    color: #FFFFFF;
+    box-shadow: 0 12px 26px rgba(138, 45, 93, 0.22);
+}
+
+.mensagens-page .video-grid {
+    gap: 1.6rem;
+}
+
+.mensagens-page .video-card {
+    border-radius: 26px;
+    overflow: hidden;
+    border: 1px solid rgba(138, 45, 93, 0.12);
+    background: #FFFFFF;
+    box-shadow: 0 18px 40px rgba(26, 26, 26, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mensagens-page .video-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 28px 58px rgba(26, 26, 26, 0.12);
+}
+
+.mensagens-page .video-thumbnail {
+    position: relative;
+    background: linear-gradient(135deg, rgba(138, 45, 93, 0.14), rgba(212, 136, 119, 0.22));
+}
+
+.mensagens-page .video-thumbnail img {
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+}
+
+.mensagens-page .play-overlay {
+    background: rgba(26, 26, 26, 0.42);
+}
+
+.mensagens-page .play-overlay i {
+    width: 64px;
+    height: 64px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.92);
+    color: #8A2D5D;
+}
+
+.mensagens-page .video-info {
+    padding: 1.5rem;
+}
+
+.mensagens-page .video-note {
+    margin-top: 2.2rem;
+    padding: 1.4rem;
+    border-radius: 24px;
+    border: 1px solid rgba(138, 45, 93, 0.12);
+    background: linear-gradient(180deg, rgba(240, 240, 240, 0.9), #FFFFFF);
+}
+
+.mensagens-page .note-content i {
+    color: #8A2D5D;
+}
+
+.mensagens-page .video-note code {
+    display: block;
+    margin-top: 0.9rem;
+    padding: 0.85rem 1rem;
+    border-radius: 14px;
+    background: #1A1A1A;
+    color: #F0F0F0;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+@media (max-width: 900px) {
+    .mensagens-page .featured-video {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .mensagens-page .featured-video,
+    .mensagens-page .video-card,
+    .mensagens-page .video-note {
+        border-radius: 22px;
+    }
+
+    .mensagens-page .video-details,
+    .mensagens-page .video-info {
+        padding: 1.35rem;
+    }
+}
