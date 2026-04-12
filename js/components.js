@@ -183,7 +183,8 @@ function atualizarMenuAtivo() {
         const href = link.getAttribute('href');
         if (!href) return;
 
-        const isActive = href === path || (href === '/' && path === '/');
+        const isGrSection = href === '/gr' && (path === '/gr' || path === '/grs');
+        const isActive = href === path || (href === '/' && path === '/') || isGrSection;
         link.classList.toggle('active', isActive);
     });
 }
@@ -426,7 +427,7 @@ function setupGalleryModal() {
 
 function setupAnimations() {
     if (!('IntersectionObserver' in window)) return;
-    const targets = qsa('.service-card, .info-box, .ministry-card, .message-card, .leader-card, .donation-card, .video-card, .gallery-item');
+    const targets = qsa('.service-card, .info-box, .ministry-card, .message-card, .leader-card, .donation-card, .video-card, .gallery-item, .gr-card, .gr-step-card, .gr-value-card, .gr-highlight-card');
     const observer = new IntersectionObserver((entries, io) => {
         entries.forEach((entry) => {
             if (!entry.isIntersecting) return;
@@ -469,6 +470,40 @@ function setupDonationActions() {
         button.addEventListener('click', () => {
             notify('Doações por cartão serão liberadas em breve. Por enquanto, use PIX ou transferência bancária.');
         });
+    });
+}
+
+function setupGrCards() {
+    const cards = qsa('.gr-card');
+    const detailName = qs('#grDetailName');
+    const detailDescription = qs('#grDetailDescription');
+    const detailRegion = qs('#grDetailRegion');
+    const detailSchedule = qs('#grDetailSchedule');
+    const detailLeader = qs('#grDetailLeader');
+    const detailAddress = qs('#grDetailAddress');
+    const detailFocus = qs('#grDetailFocus');
+    const detailMap = qs('#grDetailMap');
+
+    if (!cards.length || !detailName || !detailMap) return;
+
+    const updateDetail = (card) => {
+        cards.forEach((item) => item.classList.toggle('active', item === card));
+
+        if (detailName) detailName.textContent = card.dataset.grName || 'Grupo de Relacionamento';
+        if (detailDescription) detailDescription.textContent = card.dataset.grDescription || '';
+        if (detailRegion) detailRegion.textContent = card.dataset.grRegion || '';
+        if (detailSchedule) detailSchedule.textContent = `${card.dataset.grDay || ''} às ${card.dataset.grTime || ''}`.trim();
+        if (detailLeader) detailLeader.textContent = card.dataset.grLeader || '';
+        if (detailAddress) detailAddress.textContent = card.dataset.grAddress || '';
+        if (detailFocus) detailFocus.textContent = card.dataset.grFocus || '';
+        if (detailMap) detailMap.src = card.dataset.grMap || detailMap.src;
+    };
+
+    cards.forEach((card, index) => {
+        if (card.dataset.ready) return;
+        card.dataset.ready = 'true';
+        card.addEventListener('click', () => updateDetail(card));
+        if (index === 0) updateDetail(card);
     });
 }
 
@@ -532,6 +567,10 @@ async function carregarHeader() {
 }
 
 async function carregarFooter() {
+    const footerContainer = qs('#footer');
+    if (footerContainer) {
+        footerContainer.classList.add('footer');
+    }
     await carregarComponente('#footer', '/footer.html', setupFooter);
 }
 
@@ -648,6 +687,7 @@ function inicializarPagina() {
     setupAnimations();
     setupCopyActions();
     setupDonationActions();
+    setupGrCards();
     setupContactForm();
     setupProximoCulto();
     verificarAutenticacao();

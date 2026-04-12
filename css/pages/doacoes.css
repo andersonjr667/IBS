@@ -16,6 +16,81 @@
     gap: 1.6rem;
 }
 
+.doacoes-page .giving-intro-panel {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+    gap: 1.5rem;
+    align-items: stretch;
+    margin-bottom: 1.8rem;
+    padding: 1.8rem;
+    border-radius: 32px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(138, 45, 93, 0.12);
+    box-shadow: 0 22px 46px rgba(26, 26, 26, 0.08);
+    backdrop-filter: blur(12px);
+}
+
+.doacoes-page .giving-intro-copy h3 {
+    font-size: clamp(1.6rem, 4vw, 2.3rem);
+    color: #1A1A1A;
+    margin-bottom: 0.8rem;
+    line-height: 1.2;
+}
+
+.doacoes-page .giving-intro-copy p {
+    color: #374151;
+    line-height: 1.7;
+}
+
+.doacoes-page .giving-intro-points {
+    display: grid;
+    gap: 0.9rem;
+}
+
+.doacoes-page .giving-point {
+    padding: 1rem 1.05rem;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #FFFFFF, rgba(240, 240, 240, 0.96));
+    border: 1px solid rgba(138, 45, 93, 0.1);
+}
+
+.doacoes-page .giving-point strong {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #1A1A1A;
+}
+
+.doacoes-page .giving-point span {
+    color: #374151;
+    line-height: 1.6;
+}
+
+.doacoes-page .giving-trust-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.8rem;
+}
+
+.doacoes-page .giving-trust-card {
+    padding: 1.15rem 1.2rem;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(138, 45, 93, 0.1);
+    box-shadow: 0 14px 30px rgba(26, 26, 26, 0.06);
+}
+
+.doacoes-page .giving-trust-card strong {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: #1A1A1A;
+}
+
+.doacoes-page .giving-trust-card span {
+    color: #374151;
+    line-height: 1.6;
+}
+
 .doacoes-page .purpose-item,
 .doacoes-page .donation-card,
 .doacoes-page .testimonial-card,
@@ -62,6 +137,7 @@
 .doacoes-page .donation-card {
     position: relative;
     overflow: hidden;
+    padding: 1.8rem;
 }
 
 .doacoes-page .donation-card::before {
@@ -115,6 +191,17 @@
 }
 
 @media (max-width: 768px) {
+    .doacoes-page .giving-intro-panel {
+        grid-template-columns: 1fr;
+        padding: 1.4rem;
+        border-radius: 22px;
+    }
+
+    .doacoes-page .giving-trust-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .doacoes-page .giving-trust-card,
     .doacoes-page .purpose-item,
     .doacoes-page .donation-card,
     .doacoes-page .testimonial-card,
