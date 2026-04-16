@@ -9,7 +9,35 @@ function qs(selector, root = document) {
 }
 
 function notify(message) {
-    window.alert(message);
+    const text = (message || '').trim();
+    if (!text) return;
+
+    let container = qs('#toastContainer');
+    if (!container) {
+        container = document.createElement('div');
+        container.id = 'toastContainer';
+        container.className = 'toast-container';
+        document.body.appendChild(container);
+    }
+
+    const toast = document.createElement('div');
+    toast.className = 'toast';
+    toast.setAttribute('role', 'status');
+    const icon = document.createElement('span');
+    icon.className = 'toast-icon';
+    icon.innerHTML = '<i class="fas fa-check-circle"></i>';
+    const content = document.createElement('span');
+    content.className = 'toast-text';
+    content.textContent = text;
+    toast.append(icon, content);
+
+    container.appendChild(toast);
+    requestAnimationFrame(() => toast.classList.add('show'));
+
+    window.setTimeout(() => {
+        toast.classList.remove('show');
+        window.setTimeout(() => toast.remove(), 220);
+    }, 3600);
 }
 
 function setButtonBusy(button, text) {
@@ -193,25 +221,46 @@ function setupHeader() {
     const hamburger = qs('#hamburger');
     const navMenu = qs('#navMenu');
     const header = qs('.header');
+    const closeMenu = () => {
+        if (navMenu) navMenu.classList.remove('active');
+        if (hamburger) hamburger.classList.remove('active');
+        if (hamburger) hamburger.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('menu-open');
+    };
 
     if (hamburger && navMenu && !hamburger.dataset.ready) {
         hamburger.dataset.ready = 'true';
         hamburger.addEventListener('click', () => {
             navMenu.classList.toggle('active');
             hamburger.classList.toggle('active');
-            hamburger.setAttribute('aria-expanded', String(navMenu.classList.contains('active')));
+            const isOpen = navMenu.classList.contains('active');
+            hamburger.setAttribute('aria-expanded', String(isOpen));
+            document.body.classList.toggle('menu-open', isOpen);
         });
     }
 
     qsa('.nav-link').forEach((link) => {
         if (link.dataset.ready) return;
         link.dataset.ready = 'true';
-        link.addEventListener('click', () => {
-            if (navMenu) navMenu.classList.remove('active');
-            if (hamburger) hamburger.classList.remove('active');
-            if (hamburger) hamburger.setAttribute('aria-expanded', 'false');
-        });
+        link.addEventListener('click', closeMenu);
     });
+
+    if (navMenu && !navMenu.dataset.outsideReady) {
+        navMenu.dataset.outsideReady = 'true';
+        document.addEventListener('click', (event) => {
+            if (window.innerWidth > 768) return;
+            const clickedInsideMenu = navMenu.contains(event.target);
+            const clickedToggle = hamburger && hamburger.contains(event.target);
+            if (!clickedInsideMenu && !clickedToggle) {
+                closeMenu();
+            }
+        });
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                closeMenu();
+            }
+        });
+    }
 
     if (header && !header.dataset.scrollReady) {
         header.dataset.scrollReady = 'true';
@@ -320,7 +369,9 @@ function setupSmoothScroll() {
             const target = href ? qs(href) : null;
             if (!target) return;
             event.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            const headerOffset = qs('.header')?.offsetHeight || 0;
+            const targetTop = target.getBoundingClientRect().top + window.scrollY - headerOffset - 18;
+            window.scrollTo({ top: Math.max(targetTop, 0), behavior: 'smooth' });
         });
     });
 }
@@ -512,6 +563,14 @@ async function setupContactForm() {
     if (!form || form.dataset.ready) return;
 
     form.dataset.ready = 'true';
+    const status = qs('.form-status', form);
+
+    const setStatus = (message, type = '') => {
+        if (!status) return;
+        status.textContent = message || '';
+        status.className = `form-status${type ? ` ${type}` : ''}`;
+    };
+
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
 
@@ -528,14 +587,17 @@ async function setupContactForm() {
         };
 
         try {
+            setStatus('Enviando sua mensagem...', 'is-pending');
             await fazerRequisicao('/contato', {
                 method: 'POST',
                 body: JSON.stringify(payload)
             });
 
             form.reset();
+            setStatus('Mensagem enviada com sucesso. Nossa equipe falará com você em breve.', 'is-success');
             notify('Mensagem enviada com sucesso. Em breve entraremos em contato.');
         } catch (error) {
+            setStatus(error.message || 'Não foi possível enviar sua mensagem.', 'is-error');
             notify(error.message || 'Não foi possível enviar sua mensagem.');
         } finally {
             restoreButton();

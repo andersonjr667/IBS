@@ -34,13 +34,15 @@
 .mensagens-page .video-details h3,
 .mensagens-page .video-info h3,
 .mensagens-page .video-note h4 {
-    color: #1A1A1A;
+    color: #1F2937;
+    font-weight: 600;
 }
 
 .mensagens-page .video-description,
 .mensagens-page .video-meta,
 .mensagens-page .video-note p {
-    color: #374151;
+    color: #4B5563;
+    line-height: 1.7;
 }
 
 .mensagens-page .video-filters {
@@ -68,13 +70,15 @@
 
 .mensagens-page .messages-summary-card strong {
     display: block;
-    margin-bottom: 0.35rem;
-    color: #1A1A1A;
+    margin-bottom: 0.4rem;
+    color: #1F2937;
+    font-weight: 600;
 }
 
 .mensagens-page .messages-summary-card span {
-    color: #374151;
-    line-height: 1.6;
+    color: #4B5563;
+    line-height: 1.7;
+    font-size: 0.95rem;
 }
 
 .mensagens-page .messages-library-intro {
@@ -92,12 +96,16 @@
 
 .mensagens-page .messages-library-intro strong {
     display: block;
-    margin-bottom: 0.35rem;
-    color: #1A1A1A;
+    margin-bottom: 0.4rem;
+    color: #1F2937;
+    font-weight: 600;
 }
 
 .mensagens-page .messages-library-intro span {
-    color: #374151;
+    color: #4B5563;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
     line-height: 1.6;
 }
 

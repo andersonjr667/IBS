@@ -23,15 +23,17 @@
 }
 
 .programacoes-page .next-service-content .section-kicker {
-    color: rgba(255, 255, 255, 0.78);
-    margin-bottom: 0.9rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 1rem;
+    font-weight: 500;
 }
 
 .programacoes-page .next-service-intro {
-    color: rgba(255, 255, 255, 0.86);
-    max-width: 48ch;
-    line-height: 1.7;
-    margin-top: 0.9rem;
+    color: rgba(255, 255, 255, 0.92);
+    max-width: 52ch;
+    line-height: 1.8;
+    margin-top: 1rem;
+    font-size: 1.1rem;
 }
 
 .programacoes-page .next-service-content h2,
@@ -87,13 +89,15 @@
 
 .programacoes-page .services-overview-card strong {
     display: block;
-    margin-bottom: 0.35rem;
-    color: #1A1A1A;
+    margin-bottom: 0.4rem;
+    color: #1F2937;
+    font-weight: 600;
 }
 
 .programacoes-page .services-overview-card span {
-    color: #374151;
-    line-height: 1.6;
+    color: #4B5563;
+    line-height: 1.7;
+    font-size: 0.95rem;
 }
 
 .programacoes-page .service-card {
